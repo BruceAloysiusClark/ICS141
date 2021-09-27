@@ -25,18 +25,21 @@ public class test_scramble2 {
 
 	public static void main(String[] args) {
 
-		String sentence = "Animals are super amazing";
-		System.out.println("Before: " + sentence);
+		/*
+		 * String sentence = "Animals";
+		 *
+		 * String[] word_array = sentence.split("\s"); for (int i = 0; i <
+		 * word_array.length; i++) {
+		 * 
+		 * // int j = 0; j < word_array.length; j++; word_array[i] =
+		 * scramble(word_array[i]); }
+		 */
 
-		String[] word_array = sentence.split("\s");
-		for (int i = 0; i < word_array.length; i++) {
-
-			word_array[i] = test_scramble2.scramble(word_array[i]);
-		}
-		// String word = "Animals";
-		// word = scramble(word);
-		System.out.println("After : " + word_array);
-		System.out.println("After : " + word_array.length);
+		String word = "Animals";
+		System.out.println("Before: " + word);
+		word = scramble(word);
+		System.out.println("After : " + word);
+		// System.out.println("After : " + word_array.length);
 
 	}
 }
